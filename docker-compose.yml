@@ -1,0 +1,27 @@
+services:
+    web:
+        image: sms:175
+        environment:
+            SMS_USER: sms
+            SMS_PASSWD: passwd
+            SMPP_URL: https://a2p-api.megalabs.ru/sms/v1/sms
+            SMPP_USER: smppusr
+            SMPP_PASSWORD: smpppassword
+            SMS_DB: sms-db
+            DB_USER: sms
+            DB_PASS: password
+            DB_HOST: db
+        ports:
+            - 8000:8000
+    db:
+        image: sms-db:175
+        restart: always
+        environment:
+            POSTGRES_USER: sms
+            POSTGRES_PASSWORD: password
+            POSTGRES_DB: sms-db
+    db-mgmt:
+        image: adminer:4.8.1-standalone
+        restart: always
+        ports:
+            - 8080:8080
