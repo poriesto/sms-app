@@ -8,5 +8,5 @@
  Для корректной работы скрипта требуется доступ к Onedrive и Dockerhub.
 
 Использование:
-    URL для отправки SMS: http://HOST_IP:PORT/to=PHONE-NUMBER&text=MESSAGE&user=USER&pass=PASS
-    Пример: http://HOST_IP:PORT/to=87764348887234123&text=fsdfsdf%20dsfsdf%fdsfdsf:%20bz47328947hsdf&user=sms&pass=smppusr
+   - URL для отправки SMS: http://HOST_IP:PORT/to=PHONE-NUMBER&text=MESSAGE&user=USER&pass=PASS
+   - Пример: http://HOST_IP:PORT/to=87764348887234123&text=fsdfsdf%20dsfsdf%fdsfdsf:%20bz47328947hsdf&user=sms&pass=smppusr
