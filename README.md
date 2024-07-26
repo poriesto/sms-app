@@ -4,8 +4,12 @@
  В качестве клиента к бд используется временно adminer.
 
 Развертывание:
- - запустить скрипт build.sh
- Для корректной работы скрипта требуется доступ к Dockerhub.
+ - назначить бит исполнения для файла build.sh:
+    - chmod +x build.sh
+ - запустить скрипт build.sh:
+    - ./build.sh
+ Для корректного развертывания скрипта требуется доступ к Dockerhub.
+ Резервная ссылка для файла "astra-python.tar" https://1drv.ms/u/s!Aic8RIOhSb1wo6drmG62SULxVeQSDQ?e=3QwgK9
 
 Использование:
    - URL для отправки SMS: http://HOST_IP:PORT/to=PHONE-NUMBER&text=MESSAGE&user=USER&pass=PASS
