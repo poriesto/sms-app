@@ -5,7 +5,7 @@
 
 Развертывание:
  - запустить скрипт build.sh
- Для корректной работы скрипта требуется доступ к Onedrive и Dockerhub.
+ Для корректной работы скрипта требуется доступ к Dockerhub.
 
 Использование:
    - URL для отправки SMS: http://HOST_IP:PORT/to=PHONE-NUMBER&text=MESSAGE&user=USER&pass=PASS
