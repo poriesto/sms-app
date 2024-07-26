@@ -6,11 +6,17 @@
 Развертывание:
  - назначить бит исполнения для файла build.sh:
     - chmod +x build.sh
+ - перед запуском скрипта build.sh, убедится в наличии файла astra-python.tar не нулевого размера (данный файл это образ контейнера Astra Linux с установленный Python).
+   В случае отствия или нулевого размера файла образа astra-python.tar, необходимо скачать https://1drv.ms/u/s!Aic8RIOhSb1wo6drmG62SULxVeQSDQ?e=Hzwaiv
  - запустить скрипт build.sh:
     - ./build.sh
  Для корректного развертывания скрипта требуется доступ к Dockerhub.
- Резервная ссылка для файла "astra-python.tar" https://1drv.ms/u/s!Aic8RIOhSb1wo6drmG62SULxVeQSDQ?e=3QwgK9
 
 Использование:
    - URL для отправки SMS: http://HOST_IP:PORT/to=PHONE-NUMBER&text=MESSAGE&user=USER&pass=PASS
    - Пример: http://HOST_IP:PORT/to=87764348887234123&text=fsdfsdf%20dsfsdf%fdsfdsf:%20bz47328947hsdf&user=sms&pass=smppusr
+   - По умолчанию порт Adminer 8080. Данные для подключения:
+        - тип базы данных postgre
+        - имя пользователя - sms
+        - пароль - password
+        - имя базы данных sms-db
